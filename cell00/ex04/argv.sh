@@ -6,7 +6,7 @@ fi
 i=0
 for arg in "$@"
 do
-	mkdir "ex$arg"
+	echo "$arg"
 	i=$((i+1))
 	if [[ $i -eq 3 ]]; then
 		break
