@@ -1,0 +1,31 @@
+button {
+	background-color: lightgray;
+	font-size: 40px;
+	padding: 10px 40px;
+}
+button:hover {
+	background-color: gray;
+}
+button, button:active {
+	border: none;
+	color: black;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown ul {
+	display: none;
+	border: 1px solid gray;
+	position: absolute;
+	background-color: white;
+	list-style: none;
+	padding: 10px;
+}
+.dropdown .title:hover + ul {
+	display: block;
+}
+.dropdown li {
+	background-color: lightgray;
+	font-size: 40px;
+	padding: 10px 40px;
+}
