@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+
+.cover {
+	width: 100%;
+}
+
+.container-cover, .black-cover {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.black-cover {
+	background-color: black;
+	padding: 4vw 0;
+}
+.container-cover .title {
+	position: absolute;
+	font-size: 7vw;
+	font-weight: bold;
+	color: white;
+}
+.title {
+	font-size: 7vw;
+	font-weight: bold;
+	color: white;
+}

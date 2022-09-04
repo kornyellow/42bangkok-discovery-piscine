@@ -1,31 +1,51 @@
-button {
-	background-color: lightgray;
-	font-size: 40px;
-	padding: 10px 40px;
+html {
+	height: 100%;
 }
-button:hover {
-	background-color: gray;
+body {
+	color: #444;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
-button, button:active {
-	border: none;
-	color: black;
-}
+
 .dropdown {
 	position: relative;
+	display: inline-block;
 }
-.dropdown ul {
+.dropdown > span {
+	font-size: 4rem;
+	padding: 1rem 2rem;
+	background-color: #ddd;
+}
+
+.dropdown-content {
 	display: none;
-	border: 1px solid gray;
 	position: absolute;
-	background-color: white;
+	z-index: 1;
+	margin-top: 1rem;
+	padding: 0;
+}
+.dropdown-content ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	padding: 10px;
 }
-.dropdown .title:hover + ul {
+.dropdown-content li {
+	font-size: 2rem;
+	padding: 1rem 2rem;
+	background-color: #f8f8f8;
+}
+.dropdown-content li:hover {
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+.dropdown:hover span {
+	background-color: #ccc;
+	cursor: pointer;
+}
+.dropdown:hover .dropdown-content  {
 	display: block;
-}
-.dropdown li {
-	background-color: lightgray;
-	font-size: 40px;
-	padding: 10px 40px;
 }

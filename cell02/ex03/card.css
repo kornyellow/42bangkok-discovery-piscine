@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	color: #333;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+.card {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	border: 1px solid #ddd;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 2rem;
+	text-align: center;
+}
+.card img {
+	width: 500px;
+}
+.card .name {
+	font-size: 2.2rem;
+}
+.card .login {
+	font-size: 1.5rem;
+	color: #777;
+}
+.card .desc {
+	font-size: 1rem;
+}
+.card table {
+	margin-bottom: 1rem;
+}
+.card .contact-icon {
+	width: 50px;
+}
+.footer {
+	width: 100%;
+	background-color: #333;
+	font-size: 2rem;
+	color: #fff;
+	padding: 1rem 0;
+	text-decoration: none;
+	text-align: center;
+}
