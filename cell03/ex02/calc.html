@@ -118,7 +118,7 @@ form.onsubmit = () => {
 		alert("Error :(");
 		return;
 	}
-	if (operand_right === 0) {
+	if ((operator == "/" || operator == "%") && operand_right === 0) {
 		console.log("It's over 9000!");
 		alert("It's over 9000!");
 		return;

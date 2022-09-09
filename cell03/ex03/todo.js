@@ -1,7 +1,7 @@
 let new_button = document.getElementById("new_todo");
 let todo_list_div = document.getElementById("ft_list");
 
-let todo_cookies = document.cookie
+let todo_cookies = document.cookie;
 if (todo_cookies.length !== 0) {
 	todo_cookies = todo_cookies.split(";");
 	todo_cookies.forEach((text) => {
@@ -32,5 +32,6 @@ function insert_new_todo(id, text) {
 			document.cookie = id + "=; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 		}
 	};
+
 	todo_list_div.prepend(todo);
 }
